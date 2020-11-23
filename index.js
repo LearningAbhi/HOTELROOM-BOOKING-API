@@ -7,6 +7,7 @@ const app = express();
 let port = process.env.PORT || 8000
 app
 .use(bodyParser.json())
+//START THE WEB SERVER
 .get("/", (req, res)=>{                       
     res.status(200).send
     ( `<h1>HOTELROOM BOOKING API</h1> ,
